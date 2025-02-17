@@ -1,0 +1,34 @@
+services:
+  adorsis-mariadb:
+    image: mariadb:11.8.1-ubi9-rc
+    container_name: adorsis-mariadb-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: Adorsis
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
+    networks:
+      - adorsis-network
+
+#  adorsis-web-api:
+#    image: openjdk:21-jdk-slim
+#    container_name: adorsis-web-api-container
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/Management
+#      SPRING_DATASOURCE_USERNAME: root
+#      SPRING_DATASOURCE_PASSWORD: root
+#    depends_on:
+#      - adorsis-mariadb
+#    ports:
+#      - "8080:8080"
+#    networks:
+#      - adorsis-network
+        
+networks:
+  adorsis-network:
+    driver: bridge

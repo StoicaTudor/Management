@@ -1,0 +1,56 @@
+[
+	{
+		"firstname": "Max", 
+		"lastname": "Mustermann", 
+		"age": 38, 
+		"personnelNumber": "mm1288_se", 
+		"department": "Softwareentwicklung", 
+		"jobDescription": "Backend-Entwickler", 
+		"annualIncome": 75000
+	}, 
+	{
+		"firstname": "Miriam",
+		"lastname": "Müller", 
+		"age": 42, 
+		"personnelNumber": "mm5482_pm", 
+		"department": "Projektmanagement", 
+		"jobDescription": "Projektmanagerin", 
+		"annualIncome": 83000
+	},
+	{
+		"firstname": "Bertram",
+		"lastname": "Bauer", 
+		"age": 56, 
+		"personnelNumber": "bb4849_se", 
+		"department": "Softwareentwicklung", 
+		"jobDescription": "Frontend-Entwickler", 
+		"annualIncome": 72000
+	},
+	{
+		"firstname": "Fiona",
+		"lastname": "Fischer", 
+		"age": 27, 
+		"personnelNumber": "ff4711_hr", 
+		"department": "Human Resources", 
+		"jobDescription": "Recruiterin", 
+		"annualIncome": 52000
+	},
+	{
+		"firstname": "Agathe",
+		"lastname": "Adams", 
+		"age": 51, 
+		"personnelNumber": "aa2376_se", 
+		"department": "Softwareentwicklung", 
+		"jobDescription": "Frontend-Entwicklerin", 
+		"annualIncome": 72000
+	},
+	{
+		"firstname": "Moritz",
+		"lastname": "Meier", 
+		"age": 32, 
+		"personnelNumber": "mm8523_hr", 
+		"department": "Human Resources", 
+		"jobDescription": "Recruiter", 
+		"annualIncome": 52000
+	}
+]
