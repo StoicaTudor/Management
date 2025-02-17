@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   adorsis-mariadb:
     image: mariadb:11.8.1-ubi9-rc
@@ -13,22 +15,16 @@ services:
       - adorsis-network
 
 #  adorsis-web-api:
-#    image: openjdk:21-jdk-slim
-#    container_name: adorsis-web-api-container
+#    ports:
+#      - "8080:8080"
 #    build:
 #      context: .
 #      dockerfile: Dockerfile
-#    environment:
-#      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/Management
-#      SPRING_DATASOURCE_USERNAME: root
-#      SPRING_DATASOURCE_PASSWORD: root
 #    depends_on:
 #      - adorsis-mariadb
-#    ports:
-#      - "8080:8080"
 #    networks:
 #      - adorsis-network
-        
+
 networks:
   adorsis-network:
     driver: bridge
