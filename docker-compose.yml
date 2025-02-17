@@ -4,7 +4,7 @@ services:
     container_name: adorsis-mariadb-container
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: Adorsis
+      MYSQL_DATABASE: Management
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
