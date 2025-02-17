@@ -1,11 +1,9 @@
 package org.adorsis.management.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
 
 import java.util.List;
 
-@Data
 @Entity
 public class Department {
     @Id
@@ -14,6 +12,28 @@ public class Department {
 
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "departments")
     private List<Employee> employees;
+
+    public Department() {
+    }
+
+    public Department(Long id, String name, List<Employee> employees) {
+        this.id = id;
+        this.name = name;
+        this.employees = employees;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
 }
+
